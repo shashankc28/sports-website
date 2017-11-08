@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+
+  <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>HelloForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+     <servlet-name>DatabaseAccess</servlet-name>
+     <servlet-class>DatabaseAccess</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+     <servlet-name>DatabaseAccess</servlet-name>
+     <url-pattern>/DatabaseAccess</url-pattern>
+ </servlet-mapping>
+
+  <servlet>
+     <servlet-name>Login</servlet-name>
+     <servlet-class>Login</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+     <servlet-name>Login</servlet-name>
+     <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+    <description></description>
+    <display-name>FirstServlet</display-name>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LogoutServlet</display-name>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>Leaderboard</servlet-name>
+    <servlet-class>Leaderboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Leaderboard</servlet-name>
+    <url-pattern>/Leaderboard</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>Quiz</servlet-name>
+    <servlet-class>Quiz</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Quiz</servlet-name>
+    <url-pattern>/Quiz</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <servlet-name>Calculate</servlet-name>
+    <servlet-class>Calculate</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Calculate</servlet-name>
+    <url-pattern>/Calculate</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
